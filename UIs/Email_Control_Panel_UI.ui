@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>770</width>
+    <height>580</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>770</width>
+    <height>580</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Email Control Panel</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>751</width>
+     <height>563</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>search</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="line_edit_search">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QTableWidget" name="table_wdget_email_list">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>460</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>460</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="btn_add_email">
+          <property name="text">
+           <string>Add Email</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_remove_email">
+          <property name="text">
+           <string>Remove Email</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_set_default_email">
+          <property name="text">
+           <string>Set Default Email</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_refresh_email_list">
+          <property name="text">
+           <string>Refresh Email List</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="combo_box_email_default">
+        <property name="maximumSize">
+         <size>
+          <width>103</width>
+          <height>50</height>
+         </size>
+        </property>
+        <item>
+         <property name="text">
+          <string>All Emails</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Email Default</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Not Default</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
